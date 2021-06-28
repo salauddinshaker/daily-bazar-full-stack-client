@@ -8,9 +8,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Login from "./components/Login/Login";
 import Home from "./components/Home/Home";
-import NoMatch from "./components/NoMatch/NoMatch";
 import Review from "./components/Review/Review";
-import CheckOut from "./components/CheckOut/CheckOut";
 import Order from "./components/Order/Order";
 import AddProduct from "./components/AddProduct/AddProduct";
 
@@ -25,9 +23,6 @@ function App() {
       <Switch>  
         <Route path="/addProduct">
         <AddProduct/>
-        </Route>
-        <Route path="/checkOut">
-          <CheckOut />
         </Route>
         <Route path="/login">
           <Login />
@@ -44,11 +39,7 @@ function App() {
         <Route path="/home">
           <Home />
         </Route>
-        <Route path="*">
-          <NoMatch/>
-        </Route>
       </Switch>
-
     </Router>
     </UserContext.Provider>
   );
