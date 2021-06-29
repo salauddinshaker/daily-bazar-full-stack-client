@@ -1,10 +1,28 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
+import './Product.css';
 
-const Product = () => {
+const Product = (props) => {
+    const { name, imageURL } = props.pd;
+    const history = useHistory()
+      const handleBook = (name) => {
+          history.push(`/order/${name}`);
+      }
     return (
-        <div>
-            <h1>Bari jete ei pothe hatun..</h1>
-        </div>
+
+        <div className="card">
+            <img className="img-style" src={imageURL} alt="" />
+            <div className="card-body">
+                <div className="card-title">
+                    {name}
+                </div>
+                <div className="price-buy">               
+                       <p>500</p>
+                       <button  onClick={() => handleBook(name)} >Buy</button>                                
+                </div>
+            </div>
+        </div>      
+
     );
 };
 

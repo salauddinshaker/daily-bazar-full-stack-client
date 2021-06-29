@@ -14,10 +14,9 @@ const AddProduct = () => {
             name:data.name,
             imageURL:imageURL
         }
-         //         setImageURL(productData)
-        // console.log(productData)
+        
 
-        const url = `http://localhost:4000/addProduct`;
+        const url = `https://intense-earth-85013.herokuapp.com/addProduct`;
         
         fetch(url, {
             method:'POST',
@@ -29,6 +28,8 @@ const AddProduct = () => {
         .then(res =>{
             // console.log('data added', res)
         })
+
+       
 
     };
 
