@@ -1,0 +1,16 @@
+.add-product{
+    width: 350px;
+    height: 200px;
+    margin: 15px 15px 15px 250px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background: rgb(253, 251, 251);
+}
+.add-input{
+    margin: 7px;
+    padding: 7px;
+    background-color: lightblue;
+    border: 1px solid blue;
+    border-radius: 5px;
+
+}

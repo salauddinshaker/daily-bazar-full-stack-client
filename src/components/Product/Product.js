@@ -18,7 +18,7 @@ const Product = (props) => {
                 </div>
                 <div className="price-buy">               
                        <p>500</p>
-                       <button  onClick={() => handleBook(name)} >Buy</button>                                
+                       <button className="buy-buton" onClick={() => handleBook(name)} >Buy</button>                                
                 </div>
             </div>
         </div>      

@@ -1,0 +1,17 @@
+.review-batton{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.go-home-batton{
+    background-color: cornflowerblue;
+    color: darkmagenta;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
